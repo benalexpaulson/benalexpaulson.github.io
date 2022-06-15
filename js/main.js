@@ -4,8 +4,8 @@ var message = "";
 
 // For Writeout
 var i = 0;
-var txt = 'Hello Friend...';
-var speed = 50;
+var txt = 'Hello Friend... <span></span>';
+var speed = 150;
 
 function init() {
       var tabListItems = document.getElementById('tabs').childNodes;
