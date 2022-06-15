@@ -158,11 +158,9 @@ function writeOut() {
     var txt = 'Hello Friend...';
     var speed = 50;
 
-function typeWriter() {
   if (i < txt.length) {
     document.getElementById("header").innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
-}
 }
