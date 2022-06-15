@@ -13,13 +13,13 @@
 
 	<body onload="init()">
 
-	<div id="header"></div>
+	<h1 id="header"></h1>
 
     <!-- <div id="monitor"> -->
         <!-- <div id="content"> -->
         <ul id="tabs">
-            <li><a href="#about" onclick="showTab()">who_am_i</a></li>
-            <li><a href="#work" onclick="showTab()">work</a></li>
+            <li><a href="#about" onclick="showTab()">me</a></li>
+            <li><a href="#work" onclick="showTab()">projects</a></li>
             <li><a href="#skills" onclick="showTab()">skills</a></li>
         </ul>
 
@@ -31,15 +31,21 @@
 
                 <p>My name is Ben Paulson.</p>
 
-                <p>I play video games and I know things. While my expertise in technical support is what pays the bills, my passion is in development.</p>
+                <p>I've been a Tecnhical Support Engineer for around 10 years. In that time I've worked primarily in roles utilizing System as a service (SaaS). I've had opportunities arrize in my current and past roles to utilize 
+                    my skills and knowledge to implement scripts and practices to improve not only my daily performance, but my teams as well. 
+                
+                </p>
             </section>
 
             <section class="tabContent hide" id="work">
                 <hr>
-                <p>I tend to keep my mistakes and personal accomplishments hidden from the public eye. I've been working on keeping a record through Git when possible.</p>
+                <p>Most of my projects that I've done with previous roles I was unable to keep in a public repo and most projects I do personally are hosted on my original github as they are just side fun projects.</p>
 
-                <p>Github: <a target="_blank" href="https://github.com/benalexpaulson">https://github.com/benalexpaulson</a></p>
+                <p>Portfolio Github: <a target="_blank" href="https://github.com/benalexpaulson">https://github.com/benalexpaulson</a></p>
+                <p>Personal Github: <a target="_blank" href="https://github.com/xianith">https://github.com/xianith</a></p>
 
+
+                <strong>Personal Projects</strong>
                 <ul>
                     <li class="plus icon" onclick="showWorkInfo(this)">Rust (video game, not language) current site: <a target="_blank" href="http://rustydallas.net">http://rustydallas.net</a>
                     <div class="contribution" title="Click to see contributions" style="display: none;"><b>Contributions:</b>
@@ -58,19 +64,34 @@
                 <hr>
                 <p>Throughout the years I've picked up a wealth of knowledge that makes me pretty efficent at most technical tasks</p>
 
+                <strong>Network Based</strong>
+                <ul>
+                    <li level="5">Working via VPNs</li>
+                </ul>
+
+                <strong>Server Based</strong>
+                <ul>
+                    <li>Cron</li>
+                    <li level="4">MySQL / PostgreSQL</li>
+                    <li>Server hosting via Linux / Windows servers</li>
+                    <li>C# Plugin development</li>
+                    <li>Python script development</li>
+                </ul>
+
+                <strong>Web Based</strong>
                 <ul>
                     <li level="5">HTML</li>
                     <li level="5">CSS</li>
                     <li>PHP</li>
                     <li>Git</li>
-                    <li>Cron</li>
-                    <li level="4">MySQL / PostgreSQL</li>
-                    <li>Server hosting via Linux / Windows servers</li>
                     <li>Modx / Wordpress setup and customization</li>
                     <li>Setting up React  and Webpack</li>
                     <li>Worked with APIs (reddit, Google, Discord)</li>
-                    <li>C# Plugin development</li>
-                    <li>Python script development</li>
+                </ul>
+
+                <strong>Extra</strong>
+
+                <ul>
                     <li>Community hosting through Steam groups / Discord</li>
                     <li>Editing gamepedias / developing scripts and templates for them</li>
                 </ul>
@@ -80,7 +101,7 @@
         <div id="contact">
             <section class="tabContent" id="contact">
                 <h2>Contact Me</h2>
-                <a href="mailto:benalexpaulson@gmail.com?Subject=Portfolio%20-%20Contact%20Form">benalexpaulson@gmail.com</a> - <a target="_blank" href="https://www.linkedin.com/in/benjaminpaulson/">Linkedin</a>
+                <a  href="mailto:benalexpaulson@gmail.com?Subject=Portfolio%20-%20Contact%20Form"><img class="icon" src="imgs/gmail.png"></a>  <a target="_blank" href="https://www.linkedin.com/in/benjaminpaulson/"><img class="icon in" src="imgs/in.png"></a>
             </section>
         </div>
     <!-- </div> -->
