@@ -161,6 +161,6 @@ function writeOut() {
   if (i < txt.length) {
     document.getElementById("header").innerHTML += txt.charAt(i);
     i++;
-    setTimeout(typeWriter, speed);
+    setTimeout(writeOut, speed);
   }
 }
