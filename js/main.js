@@ -2,6 +2,11 @@ var tabLinks = new Array();
 var contentDivs = new Array();
 var message = "";
 
+// For Writeout
+var i = 0;
+var txt = 'Hello Friend...';
+var speed = 50;
+
 function init() {
       var tabListItems = document.getElementById('tabs').childNodes;
       for ( var i = 0; i < tabListItems.length; i++ ) {
@@ -150,13 +155,12 @@ function errorMsgReset() {
   document.getElementById("formName").style.border="1px solid black"
   document.getElementById("formSubject").style.border="1px solid black"
   document.getElementById("formEmail").style.border="1px solid black"
-
 }
 
+
+
 function writeOut() {
-    var i = 0;
-    var txt = 'Hello Friend...';
-    var speed = 50;
+
 
   if (i < txt.length) {
     document.getElementById("header").innerHTML += txt.charAt(i);
