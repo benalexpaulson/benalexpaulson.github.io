@@ -4,7 +4,7 @@ var message = "";
 
 // For Writeout
 var i = 0;
-var txt = 'Hello Friend... <span></span>';
+var txt = 'Hello Friend...';
 var speed = 150;
 
 function init() {
