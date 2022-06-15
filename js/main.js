@@ -1,4 +1,3 @@
-
 var tabLinks = new Array();
 var contentDivs = new Array();
 var message = "";
@@ -33,6 +32,8 @@ function init() {
       if (window.location.hash.substr(1) != "") {
       loadTab();
       }
+
+      writeOut();
     }
 
 function showTab() {
@@ -150,4 +151,18 @@ function errorMsgReset() {
   document.getElementById("formSubject").style.border="1px solid black"
   document.getElementById("formEmail").style.border="1px solid black"
 
+}
+
+function writeOut() {
+    var i = 0;
+    var txt = 'Hello Friend...';
+    var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("header").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
 }
