@@ -1,6 +1,11 @@
 @font-face {
 	font-family: custm_bit;
-    src: url('visitor2.ttf')
+    src: url('fonts/visitor2.ttf')
+}
+
+@font-face {
+	font-family: mrrobot;
+    src: url('fonts/MR\ ROBOT.ttf')
 }
 
 body { 
@@ -14,12 +19,12 @@ body {
 #header {
 	background-color: black;
 	bottom: 0;
-	color: white;
+	color: #dc322d;
 	display:block;
-	font-family: custm_bit;
+	font-family: mrrobot;
 	font-size: 85px;
 	margin: 0;
-	padding-top: 125px;
+	padding-top: 225px;
 	text-align: center;
 	vertical-align: bottom;
 }
