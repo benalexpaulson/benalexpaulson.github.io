@@ -27,6 +27,12 @@ strong {
     font-size: 135%;
 }
 
+#portrait {
+    width: 250px;
+    float: right;
+    border-radius: 5px;
+}
+
 #header {
 	background-color: black;
 	bottom: 0;
@@ -39,6 +45,24 @@ strong {
     padding-bottom: 50px;
 	text-align: center;
 	vertical-align: bottom;
+}
+
+@keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+
+#header.cursor::after {
+    content: "";
+    background:#dc322d;
+    position: relative;
+    padding:0 5px 0 5px;
+}
+
+#header.cursor::after {
+    /*code commented for brevity*/
+    animation: cursor-blink 1.5s steps(2) infinite;
 }
 
 #monitor {
@@ -65,15 +89,15 @@ h1 {margin: 0; padding: 0; font-size: 10vmin; line-height: .5;}
 /*#container hr {margin: 10px;}*/
 
 a {color: var(--secondary-color); text-decoration: none; transition: 0.2s; }
-a:hover { color: white; text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray; }
+a:hover { color: rgb(177, 152, 152); }
 a.selected { cursor: default; color: var(--main-color); text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
 /*a.selected:hover { cursor: default; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;}*/
 
-#container hr { border:2px dashed var(--main-color);}
+#container hr { border:2px dashed var(--main-color); width:465px}
 
-ul#tabs { text-align: center; margin: 10px 0 0 0; padding: 0; padding-top:25px; list-style-type: none; font-size: 40px; font-family: custm_bit; }
+ul#tabs { text-align: center; margin: 10px 0 0 0; list-style-type: none; font-size: 40px; font-family: custm_bit; }
 ul#tabs li { display: inline; } 
-ul#tabs li:after { content: " |"; color: var(--main-color);}
+ul#tabs li:after { content: " |"; color: var(--main-color); font-size:65%}
 ul#tabs li:last-child:after { content: ""; }
 
 /*div.tabContent { margin: 0 20% 0 20%; }

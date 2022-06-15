@@ -4,7 +4,7 @@ var message = "";
 
 // For Writeout
 var i = 0;
-var txt = 'Hello Friend...';
+var txt = 'Hello Friend';
 var speed = 150;
 
 function init() {
@@ -160,11 +160,13 @@ function errorMsgReset() {
 
 
 function writeOut() {
-
-
   if (i < txt.length) {
     document.getElementById("header").innerHTML += txt.charAt(i);
     i++;
     setTimeout(writeOut, speed);
+  }
+
+  if (i == txt.length) {
+    document.getElementById("header").classList.add("cursor");
   }
 }
