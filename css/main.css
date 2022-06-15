@@ -16,10 +16,6 @@ body {
 	line-height: 1.5em;
 }
 
-#header h1  {
-    font-weight: 100 !important;
-}
-
 #header {
 	background-color: black;
 	bottom: 0;
