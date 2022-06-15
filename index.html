@@ -1,1 +1,87 @@
-Hello friend... 2
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Font Awesome Style Sheet -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+		<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+		<script src="js/main.js"></script>
+		<link rel="icon" href="imgs/favicon.ico">
+		
+		<title>Ben Paulson</title>
+	</head>
+
+	<body onload="init()">
+
+	<div id="header">
+		<h1>Hello Friend . . .</h1>
+	</div>
+
+	<ul id="tabs">
+		<li><a href="#about" onclick="showTab()">Me</a></li>
+		<li><a href="#work" onclick="showTab()">Work</a></li>
+		<li><a href="#contact" onclick="showTab()">Contact</a></li>
+	</ul>
+
+	<div id="container">
+		<section class="tabContent" id="about">
+			<hr>
+			<h2>Who I am</h2>
+
+			<p>The name's Ben Paulson.</p>
+
+			<p>I play video games and I know things. Throughout the years I've picked up a wealth of knowledge that makes me pretty efficent at most technical tasks. While my expertise in technical support is what pays the bills, my passion is in development.</p>
+
+			<b>Skills I've acquired:</b><ul>
+				<li level="5">HTML</li>
+				<li level="5">CSS</li>
+				<li>PHP</li>
+				<li>Git</li>
+				<li>Cron</li>
+				<li level="4">MySQL / PostgreSQL</li>
+				<li>Server hosting via Linux / Windows servers</li>
+				<li>Modx / Wordpress setup and customization</li>
+				<li>Setting up React  and Webpack</li>
+				<li>Worked with APIs (reddit, Google, Discord)</li>
+				<li>C# Plugin development</li>
+				<li>Python script development</li>
+				<li>Community hosting through Steam groups / Discord</li>
+				<li>Editing gamepedias / developing scripts and templates for them</li>
+			</ul>
+		</section>
+
+		<section class="tabContent hide" id="work">
+			<hr>
+			<h2>Projects I've done</h2>
+
+			<p>I tend to keep my mistakes and personal accomplishments hidden from the public eye. I've been working on keeping a record through Git when possible.</p>
+
+			<p>Github: <a target="_blank" href="https://github.com/benalexpaulson">https://github.com/benalexpaulson</a></p>
+
+			<ul>
+				<li class="plus icon" onclick="showWorkInfo(this)">Rust (video game, not language) current site: <a target="_blank" href="http://rustydallas.net">http://rustydallas.net</a>
+				<div class="contribution" title="Click to see contributions" style="display: none;"><b>Contributions:</b>
+					<ul style="padding-left: 15px;">
+					<li>Made several scripts and database connections to read from json files to display player stats.</li>
+					<li>Developed a discord bot to display server information and inform users of changes.</li>
+					<li>Modified / created several in game c# plugins.</li>
+				</ul></div></li>
+				<li class="dev icon" title="Sole Developer">Gaming community hub: <a target="_blank" href="http://drinkinoutacups.com">http://drinkinoutacups.com</a></li>
+				<li class="old icon" title="Sole Developer">(Archived) Rust site: <a target="_blank" href="http://drinkinoutacups.com/rust">http://drinkinoutacups.com/rust</a></li>
+				<li class="old icon" title="Sole Developer">(Archived) Escape from Tarkov hub: <a target="_blank" href="https://github.com/xianith/ScavCo">http://scav.co</a></li>
+			</ul>
+		</section>
+
+		<section class="tabContent hide" id="contact">
+			<hr>
+			<h2>How to reach me</h2>
+
+			<ul>
+				<li class="email icon">- <a href="mailto:benalexpaulson@gmail.com?Subject=Portfolio%20-%20Contact%20Form">benalexpaulson@gmail.com</a></li>
+				<br>
+				<li><a target="_blank" href="https://www.linkedin.com/in/benjaminpaulson/">Linkedin</a></li>
+			</ul>
+		</section>
+	</div>
+	</body>
+</html>
