@@ -55,17 +55,42 @@ strong {
     }
   }
 
+@-webkit-keyframes matrix {  
+	0% { color: #dc322d; }	
+	10% { color: #e34b15; }	
+	20% { color: #e66300; }	
+	30% { color: #e47b00; }	
+	40% { color: #dc9300; }	
+	50% { color: #d0aa00; }	
+	60% { color: #bec100; }	
+	70% { color: #a4d600; }	
+	80% { color: #80eb00; }	
+	100% { color: #39ff14; }	
+}
+
+.matrix {
+    -webkit-animation-name: matrix;  
+    -webkit-animation-iteration-count: 1;  
+    -webkit-animation-duration: 0.5s; 
+}
+
+#header.newcursor::after {
+    background:#39ff14;
+}
+
 #header.cursor::after {
-    content: "";
     background:var(--header-color);
+}
+
+#header.cursor::after, #header.newcursor::after {
+    content: "";
     position: relative;
     padding:0 5px 0 5px;
     bottom:10px;
     top: -5px;
 }
 
-#header.cursor::after {
-    /*code commented for brevity*/
+#header.cursor::after, #header.newcursor::after {
     animation: cursor-blink 1.5s steps(2) infinite;
     bottom:10px;
     top: -5px;
@@ -97,13 +122,13 @@ img.icon {
     border-radius: 5px;
 }
 
-#contact h2, #container h2 {text-align: center; margin: 10px 0 0 0; padding: 0; list-style-type: none; font-size: 24px; font-family: custm_bit; font-weight: 200}
+#contact h2, #container h2 {margin: 10px 0 0 0; padding: 0; list-style-type: none; font-size: 24px; font-family: custm_bit; font-weight: 200}
 /*#container hr {margin: 10px;}*/
 
 #tabs a {color: var(--header-color); font-family: custm_bit;}
 a {color: var(--secondary-color); text-decoration: none; transition: 0.2s; font-family: 'Courier New', Courier, monospace; }
 #tabs a:hover, a:hover { color: rgb(245, 245, 245); }
-#tabs a.selected, a.selected { cursor: default; color: var(--main-color); text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+#tabs a.selected, a.selected { cursor: default; color: var(--main-color) !important; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
 /*a.selected:hover { cursor: default; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;}*/
 
 #container hr { border:2px dashed var(--main-color); width:465px}

@@ -46,10 +46,10 @@ function showTab() {
 
       for ( var id in contentDivs ) {
         if ( id == selectedId ) {
-          tabLinks[id].className = 'selected';
+          tabLinks[id].className = 'selected tab';
           contentDivs[id].className = 'tabContent';
         } else {
-          tabLinks[id].className = '';
+          tabLinks[id].className = 'tab';
           contentDivs[id].className = 'tabContent hide';
         }
       }
@@ -78,10 +78,10 @@ function loadTab() {
 
   for ( var id in contentDivs ) {
         if ( id == selectedId ) {
-          tabLinks[id].className = 'selected';
+          tabLinks[id].className = 'selected tab';
           contentDivs[id].className = 'tabContent';
         } else {
-          tabLinks[id].className = '';
+          tabLinks[id].className = 'tab';
           contentDivs[id].className = 'tabContent hide';
         }
       }
@@ -168,5 +168,17 @@ function writeOut() {
 
   if (i == txt.length) {
     document.getElementById("header").classList.add("cursor");
+    setTimeout(function () {
+      document.getElementById("header").classList.remove("cursor");
+      document.getElementById("header").classList.add("matrix");
+      const tabs = document.getElementsByClassName("tab");
+      for (let t = 0; t < tabs.length; t++) {
+        tabs[t].classList.add("matrix");
+        tabs[t].style.color = "#39ff14";
+      }
+      document.getElementById("header").style.color = "#39ff14";
+      document.getElementById("tabs").style.color = "#39ff14";
+      document.getElementById("header").classList.add("newcursor");
+    }, 5000);
   }
 }
